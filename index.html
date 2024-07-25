@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/syles.css" />
     <title>AI poem generator</title>
@@ -19,13 +20,11 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="button" />
         </form>
-        <div class="poem" id="poem">
-          <br />
-          Not present on the Year
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
